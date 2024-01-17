@@ -1,0 +1,5 @@
+BrowserName=Chrome
+appURL=https://www.flipkart.com/
+HighElement=true
+SheetName=Login
+headless=false
