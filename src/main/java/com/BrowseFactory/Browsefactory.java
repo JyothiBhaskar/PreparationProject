@@ -1,5 +1,7 @@
 package com.BrowseFactory;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
@@ -45,7 +47,11 @@ public static WebDriver getDriver() {
 			}
 			options.merge(capabilities);
 			
-			driver=new RemoteWebDriver(options);
+			try {
+				driver=new RemoteWebDriver(new URL("http://13.126.223.96:4444/"),options);
+			} catch (MalformedURLException e) {
+			Reporter.log("Log Info - Remote webdriver not launched" +e.getMessage());
+			}
 			
 			//driver=new ChromeDriver(options);
 		}
