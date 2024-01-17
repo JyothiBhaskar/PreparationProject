@@ -8,6 +8,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Reporter;
 
 import com.project.Dataprovider.ConfigClass;
@@ -29,6 +31,10 @@ public static WebDriver getDriver() {
 		{
 			
 			ChromeOptions options=new ChromeOptions();
+			DesiredCapabilities capabilities=new DesiredCapabilities();
+			capabilities.setCapability("browserName", "chrome");
+			capabilities.setCapability("browserVersion", "120.0");
+			capabilities.setCapability("platformName", "linux");
 			
 			if (ConfigClass.getProperty("headless").equalsIgnoreCase("true")) 
 			{
@@ -37,8 +43,11 @@ public static WebDriver getDriver() {
 				Reporter.log("LOG:INFO - Running Test In Headless Mode",true);
 
 			}
+			options.merge(capabilities);
 			
-			driver=new ChromeDriver(options);
+			driver=new RemoteWebDriver(options);
+			
+			//driver=new ChromeDriver(options);
 		}
 		else if(BrowserName.equalsIgnoreCase("Firefox")||BrowserName.equalsIgnoreCase("firefox"))
 		{
