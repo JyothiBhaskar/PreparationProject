@@ -14,7 +14,7 @@ public class ConfigClass {
 		Properties prop=new Properties();
 	
 		try {
-			prop.load(new FileInputStream(new File("C:\\Users\\hp\\Desktop\\Java1\\PreparationProject\\ConfigProperties\\ConfigDetails")));
+			prop.load(new FileInputStream(new File("./ConfigProperties/ConfigDetails")));
 		} catch (IOException e) {
 			
 			Reporter.log("Log Info - Unable to Config File");
