@@ -14,12 +14,12 @@
       <![CDATA[Log Info:Browser Closed]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-01-19T17:15:35 IST" name="Default suite" finished-at="2024-01-19T17:15:53 IST" duration-ms="17513">
+  <suite started-at="2024-01-19T23:33:13 IST" name="Default suite" finished-at="2024-01-19T23:33:45 IST" duration-ms="31599">
     <groups>
     </groups>
-    <test started-at="2024-01-19T17:15:35 IST" name="Default test" finished-at="2024-01-19T17:15:53 IST" duration-ms="17513">
+    <test started-at="2024-01-19T23:33:13 IST" name="Default test" finished-at="2024-01-19T23:33:45 IST" duration-ms="31599">
       <class name="com.project.TestCases.LoginTestCase">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.project.TestCases.LoginTestCase@1e0b4072]" started-at="2024-01-19T17:15:36 IST" name="setup" finished-at="2024-01-19T17:15:41 IST" duration-ms="4742" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.project.TestCases.LoginTestCase@1e0b4072]" started-at="2024-01-19T23:33:14 IST" name="setup" finished-at="2024-01-19T23:33:31 IST" duration-ms="17204" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Log Info: Setting upthe Browser]]>
@@ -29,7 +29,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Login(java.lang.String)[pri:0, instance:com.project.TestCases.LoginTestCase@1e0b4072]" started-at="2024-01-19T17:15:41 IST" name="Login" data-provider="TestingData" finished-at="2024-01-19T17:15:53 IST" duration-ms="11547" status="PASS">
+        <test-method signature="Login(java.lang.String)[pri:0, instance:com.project.TestCases.LoginTestCase@1e0b4072]" started-at="2024-01-19T23:33:31 IST" name="Login" data-provider="TestingData" finished-at="2024-01-19T23:33:44 IST" duration-ms="13130" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,7 +40,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.project.TestCases.LoginTestCase@1e0b4072]" started-at="2024-01-19T17:15:53 IST" name="teardown" finished-at="2024-01-19T17:15:53 IST" duration-ms="196" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.project.TestCases.LoginTestCase@1e0b4072]" started-at="2024-01-19T23:33:44 IST" name="teardown" finished-at="2024-01-19T23:33:45 IST" duration-ms="324" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Closing the Browser]]>

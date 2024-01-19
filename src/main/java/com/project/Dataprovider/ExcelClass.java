@@ -17,7 +17,7 @@ public class ExcelClass {
 		XSSFWorkbook wb=null;
 					
 		try {
-			wb=new XSSFWorkbook(new FileInputStream(new File("C:/Users/hp/Desktop/PreparationprojectData.xlsx")));
+			wb=new XSSFWorkbook(new FileInputStream(new File(System.getProperty("user.dir")+"/TestData/PreparationprojectData.xlsx")));
 		} catch (FileNotFoundException e) {
 			Reporter.log("LogInfo - File not found" +e.getMessage());
 		} catch (IOException e) {

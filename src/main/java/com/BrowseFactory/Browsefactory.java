@@ -31,7 +31,6 @@ public static WebDriver getDriver() {
 	{
 		if (BrowserName.equalsIgnoreCase("Chrome") || BrowserName.equalsIgnoreCase("Google Chrome")) 
 		{
-			
 			ChromeOptions options=new ChromeOptions();
 			DesiredCapabilities capabilities=new DesiredCapabilities();
 			capabilities.setCapability("browserName", "chrome");
@@ -53,7 +52,8 @@ public static WebDriver getDriver() {
 			Reporter.log("Log Info - Remote webdriver not launched" +e.getMessage());
 			}
 			
-			//driver=new ChromeDriver(options);
+			
+			//driver=new ChromeDriver();
 		}
 		else if(BrowserName.equalsIgnoreCase("Firefox")||BrowserName.equalsIgnoreCase("firefox"))
 		{
