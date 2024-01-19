@@ -1,4 +1,4 @@
-BrowserName=Chrome
+BrowserName=chrome
 appURL=https://www.flipkart.com/
 HighElement=true
 SheetName=Login

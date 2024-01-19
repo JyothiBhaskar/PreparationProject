@@ -29,7 +29,7 @@ public static WebDriver getDriver() {
 	
 	public static WebDriver getBrowser(String BrowserName, String appURL)
 	{
-		if (BrowserName.equalsIgnoreCase("Chrome") || BrowserName.equalsIgnoreCase("Google Chrome")) 
+		if (BrowserName.equalsIgnoreCase("chrome") || BrowserName.equalsIgnoreCase("Google Chrome")) 
 		{
 			ChromeOptions options=new ChromeOptions();
 			DesiredCapabilities capabilities=new DesiredCapabilities();
