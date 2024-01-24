@@ -31,29 +31,29 @@ public static WebDriver getDriver() {
 	{
 		if (BrowserName.equalsIgnoreCase("chrome")||BrowserName.equalsIgnoreCase("Google Chrome")) 
 		{
-			ChromeOptions options=new ChromeOptions();
-			DesiredCapabilities capabilities=new DesiredCapabilities();
-			capabilities.setCapability("browserName", "chrome");
-			capabilities.setCapability("browserVersion", "120.0");
-			capabilities.setCapability("platformName", "linux");
+			//ChromeOptions options=new ChromeOptions();
+			//DesiredCapabilities capabilities=new DesiredCapabilities();
+			//capabilities.setCapability("browserName", "chrome");
+			//capabilities.setCapability("browserVersion", "120.0");
+			//capabilities.setCapability("platformName", "linux");
 			
-			if (ConfigClass.getProperty("headless").equalsIgnoreCase("true")) 
-			{
-				options.addArguments("--headless=new");
+			//if (ConfigClass.getProperty("headless").equalsIgnoreCase("true")) 
+			//{
+				//options.addArguments("--headless=new");
 				
-				Reporter.log("LOG:INFO - Running Test In Headless Mode",true);
+//				Reporter.log("LOG:INFO - Running Test In Headless Mode",true);
 
-			}
-			options.merge(capabilities);
+			//}
+			//options.merge(capabilities);
 			
-			try {
-				driver=new RemoteWebDriver(new URL("http://13.201.23.213:4444/"),options);
-			} catch (MalformedURLException e) {
-			Reporter.log("Log Info - Remote webdriver not launched" +e.getMessage());
-			}
+			//try {
+				//driver=new RemoteWebDriver(new URL("http://13.201.23.213:4444/"),options);
+			//} catch (MalformedURLException e) {
+			//Reporter.log("Log Info - Remote webdriver not launched" +e.getMessage());
+			//}
 			
 			
-			//driver=new ChromeDriver();
+			driver=new ChromeDriver();
 		}
 		else if(BrowserName.equalsIgnoreCase("Firefox")||BrowserName.equalsIgnoreCase("firefox"))
 		{
