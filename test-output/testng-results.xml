@@ -14,12 +14,12 @@
       <![CDATA[Log Info:Browser Closed]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-01-19T23:45:47 IST" name="Default suite" finished-at="2024-01-19T23:46:05 IST" duration-ms="17776">
+  <suite started-at="2024-01-29T15:31:56 IST" name="Suite" finished-at="2024-01-29T15:32:25 IST" duration-ms="29207">
     <groups>
     </groups>
-    <test started-at="2024-01-19T23:45:47 IST" name="Default test" finished-at="2024-01-19T23:46:05 IST" duration-ms="17776">
+    <test started-at="2024-01-29T15:31:56 IST" name="Test" finished-at="2024-01-29T15:32:25 IST" duration-ms="29207">
       <class name="com.project.TestCases.LoginTestCase">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.project.TestCases.LoginTestCase@1e0b4072]" started-at="2024-01-19T23:45:48 IST" name="setup" finished-at="2024-01-19T23:45:53 IST" duration-ms="4880" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.project.TestCases.LoginTestCase@2ef14fe]" started-at="2024-01-29T15:31:57 IST" name="setup" finished-at="2024-01-29T15:32:07 IST" duration-ms="10250" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Log Info: Setting upthe Browser]]>
@@ -29,7 +29,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Login(java.lang.String)[pri:0, instance:com.project.TestCases.LoginTestCase@1e0b4072]" started-at="2024-01-19T23:45:53 IST" name="Login" data-provider="TestingData" finished-at="2024-01-19T23:46:05 IST" duration-ms="11820" status="PASS">
+        <test-method signature="Login(java.lang.String)[pri:0, instance:com.project.TestCases.LoginTestCase@2ef14fe]" started-at="2024-01-29T15:32:07 IST" name="Login" data-provider="TestingData" finished-at="2024-01-29T15:32:23 IST" duration-ms="16583" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,7 +40,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.project.TestCases.LoginTestCase@1e0b4072]" started-at="2024-01-19T23:46:05 IST" name="teardown" finished-at="2024-01-19T23:46:05 IST" duration-ms="157" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.project.TestCases.LoginTestCase@2ef14fe]" started-at="2024-01-29T15:32:25 IST" name="teardown" finished-at="2024-01-29T15:32:25 IST" duration-ms="305" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Closing the Browser]]>
@@ -51,6 +51,6 @@
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.project.TestCases.LoginTestCase -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

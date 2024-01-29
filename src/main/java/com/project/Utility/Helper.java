@@ -8,7 +8,6 @@ import java.time.Duration;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
@@ -86,6 +85,8 @@ public class Helper {
 		Actions act=new Actions(driver);
 		act.scrollToElement(ele).perform();
 	}
+	
+	
 	
 	public static void ScrolltoElement(WebDriver driver,By Locator)
 	{

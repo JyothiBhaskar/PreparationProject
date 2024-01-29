@@ -3,3 +3,4 @@ appURL=https://www.flipkart.com/
 HighElement=true
 SheetName=Login
 headless=false
+screenshotOnSuccess=true
