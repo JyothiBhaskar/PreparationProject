@@ -47,7 +47,7 @@ public static WebDriver getDriver() {
 			options.merge(capabilities);
 			
 			try {
-				driver=new RemoteWebDriver(new URL("http://13.234.217.35:4444/"),options);
+				driver=new RemoteWebDriver(new URL("http://13.201.23.213:4444/"),options);
 			} catch (MalformedURLException e) {
 			Reporter.log("Log Info - Remote webdriver not launched" +e.getMessage());
 			}
